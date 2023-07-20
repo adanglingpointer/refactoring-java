@@ -6,15 +6,18 @@ public class Main {
 
         var sc = new Scanner(System.in);
 
-        System.out.print("Enter a number: ");
-        var d1 = sc.nextDouble();
+        double d1 = getInput(sc);
 
-        System.out.print("Enter another number: ");
-        var d2 = sc.nextDouble();
+        double d2 = getInput(sc);
 
         double result = d1 / d2;
 
         System.out.println("The answer is " + result);
 
+    }
+
+    private static double getInput(Scanner sc) {
+        System.out.print("Enter a number: ");
+        return sc.nextDouble();
     }
 }
